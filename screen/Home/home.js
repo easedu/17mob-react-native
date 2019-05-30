@@ -17,9 +17,9 @@ export default class Home extends React.Component {
     };
   }
 
-  getData(seasons) {
-    this.props.navigation.navigate('SeasonalDetails', {
-      seasons
+  getData(year) {
+    this.props.navigation.navigate('Categories', {
+      year
     });
   }
 

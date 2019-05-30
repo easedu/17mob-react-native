@@ -7,6 +7,8 @@ import {
 
 import Home from './screen/Home/home';
 import SeasonalDetails from './screen/SeasonalDetails/seasonalDetails';
+import Categories from './screen/Categories/categories';
+import DetailsCategories from './screen/DetailsCategories/detailsCategories';
 
 const AppNavigator = createStackNavigator(
   {
@@ -15,6 +17,12 @@ const AppNavigator = createStackNavigator(
     },
     SeasonalDetails: {
       screen: SeasonalDetails,
+    },
+    Categories: {
+      screen: Categories,
+    },
+    DetailsCategories: {
+      screen: DetailsCategories,
     }
   },
   {
