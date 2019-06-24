@@ -6,23 +6,23 @@ import {
 } from 'react-navigation';
 
 import Home from './screen/Home/home';
-import SeasonalDetails from './screen/SeasonalDetails/seasonalDetails';
 import Categories from './screen/Categories/categories';
 import DetailsCategories from './screen/DetailsCategories/detailsCategories';
+import Details from './screen/Details/details';
 
 const AppNavigator = createStackNavigator(
   {
     Home: {
       screen: Home,
     },
-    SeasonalDetails: {
-      screen: SeasonalDetails,
-    },
     Categories: {
       screen: Categories,
     },
     DetailsCategories: {
       screen: DetailsCategories,
+    },
+    Details: {
+      screen: Details,
     }
   },
   {

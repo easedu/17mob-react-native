@@ -5,26 +5,21 @@ import style from './style';
 
 
 class ListCategories extends PureComponent {
-    renderListCategories() {
-        let categories = <View>
-            {this.props.races.map((races, key) => {
-                return (
-                    <Button block key={key} style={style.button}>
-                        <Text>
-                            {races.Circuit.circuitName}
-                        </Text>
-                    </Button>
-                );
-            })}
-        </View>;
-
-        return categories;
-    }
-
     render() {
         return (
             <View>
-                {this.renderListCategories()}
+                <Button block style={style.button}
+                    onPress={() => this.props.handlerClick('Races')}>
+                    <Text>
+                        Corridas
+                    </Text>
+                </Button>
+                <Button block style={style.button}
+                    onPress={() => this.props.handlerClick('Drivers')}>
+                    <Text>
+                        Pilotos
+                    </Text>
+                </Button>
             </View>
         );
     }
